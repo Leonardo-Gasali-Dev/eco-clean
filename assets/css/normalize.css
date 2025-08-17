@@ -1,0 +1,332 @@
+/*--------------------------------------------------------------
+ CSS Normalize
+--------------------------------------------------------------*/
+/**
+ * Usar un modelo de caja más intuitivo.
+ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/**
+ * Corrige el tamaño de fuente de la raíz cuando se modifica en elementos padre.
+ * 1. Evita ajustes de tamaño de fuente después de cambios de orientación en iOS.
+ */
+html {
+    -webkit-text-size-adjust: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+}
+
+/*--------------------------------------------------------------
+ CSS Sections
+--------------------------------------------------------------*/
+/*
+/**
+ * Elimina el margen en todos los navegadores.
+ */
+body {
+    margin: 0;
+}
+
+/**
+ * Corrige tamaño de fuente y margen para elementos `h1`.
+ */
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+/*--------------------------------------------------------------
+ Grouping content
+--------------------------------------------------------------*/
+/**
+ * Agrega el tamaño de caja correcto en Firefox.
+ * Muestra el desbordamiento en Edge.
+ */
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+/**
+ * Resetea listas.
+ */
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/**
+ * Hereda tipografía para elementos de entrada.
+ */
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+/**
+ * Muestra el desbordamiento en navegadores modernos.
+ */
+pre {
+    font-family: monospace, monospace;
+    overflow: auto;
+}
+/*--------------------------------------------------------------
+ Text-level semantics
+--------------------------------------------------------------*/
+/**
+ * Elimina el fondo gris en enlaces activos.
+ */
+a {
+    background-color: transparent;
+}
+
+/**
+ * Estilo accesible para enfoque de enlaces.
+ */
+a:focus {
+    outline: 2px dashed currentColor;
+    outline-offset: 4px;
+}
+
+/**
+ * Elimina el borde inferior en algunos navegadores antiguos.
+ * Aplica subrayado punteado a abreviaturas.
+ */
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline dotted;
+}
+
+/**
+ * Agrega el peso de fuente correcto.
+ */
+b, strong {
+    font-weight: bolder;
+}
+
+/**
+ * Corrige la herencia y escalado de tamaño de fuente.
+ */
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+/**
+ * Ajusta tamaño de fuente en `small`.
+ */
+small {
+    font-size: 80%;
+}
+
+/**
+ * Evita que `sub` y `sup` afecten la altura de línea.
+ */
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/*--------------------------------------------------------------
+ Forms
+--------------------------------------------------------------*/
+/**
+ * Hereda tipografía y corrige margen para formularios.
+ */
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+/**
+ * Muestra el desbordamiento en navegadores modernos.
+ */
+button, input {
+    overflow: visible;
+}
+
+/**
+ * Elimina la transformación de texto por defecto.
+ */
+button, select {
+    text-transform: none;
+}
+
+/**
+ * Elimina estilos no deseados en Chrome y Safari.
+ */
+[type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+/**
+ * Corrige padding en Firefox.
+ */
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * Corrige salto de línea y herencia de color.
+ */
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+/**
+ * Alineación vertical para `progress`.
+ */
+progress {
+    vertical-align: baseline;
+}
+
+/**
+ * Elimina la barra de desplazamiento vertical.
+ */
+textarea {
+    overflow: auto;
+}
+
+/**
+ * Ajusta `checkbox` y `radio`.
+ */
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/**
+ * Corrige estilos para inputs numéricos.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+/**
+ * Corrige estilos para inputs de búsqueda.
+ */
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Corrige estilos para botones de carga.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+    font: inherit;
+}
+
+/**
+ * Estilo para inputs y botones deshabilitados.
+ */
+:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/*--------------------------------------------------------------
+ Media
+--------------------------------------------------------------*/
+/**
+ * Hace que las imágenes sean responsivas por defecto.
+ */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/*--------------------------------------------------------------
+ Interactive
+--------------------------------------------------------------*/
+/**
+ * Muestra correctamente `details` y `summary`.
+ */
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+/*--------------------------------------------------------------
+ Misc
+--------------------------------------------------------------*/
+/**
+ * Oculta correctamente templates y elementos ocultos.
+ */
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+/*--------------------------------------------------------------
+ Accessibility
+--------------------------------------------------------------*/
+/**
+ * Elimina el espaciado en tablas y corrige color.
+ */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: inherit;
+}
+
+/**
+ * Mejora la legibilidad con contraste mínimo.
+ */
+@media (prefers-contrast: more) {
+  * {
+      outline: 2px solid currentColor !important;
+  }
+}
+
+/**
+ * Reduce movimiento para usuarios que lo prefieren.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+  }
+}

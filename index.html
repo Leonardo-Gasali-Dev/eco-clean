@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="HTML, Website Design, Best Practices, Leonardo Gasali, Practice Project" />
+    <meta name="description" content="Explore HTML best practices with Leonardo Gasali's practice project." />
+    <meta name="author" content="Leonardo Gasali" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--==================== Title ====================-->
+    <title>EcoClean</title>
+
+    <!--==================== Favicon ====================-->
+    <!--==================== Google Fonts ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--==================== Font Awesome ====================-->
+    <!--==================== CSS Reset/Normalize ====================-->
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <!--==================== Bootstrap 5 ====================-->
+    <!--==================== Main CSS ====================-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+</head>
+
+<body>
+
+    <!--==================== Header ====================-->
+    <header class="header" role="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">EcoClean</a>
+            <button class="header__menu-toggle" id="menuToggle">
+                <span class="header__menu-icon"></span>
+            </button>
+
+            <!--==================== Nav ====================-->
+            <nav class="header__nav" id="mainNav">
+                <ul class="header__nav-list">
+                    <li><a href="#inicio" class="header__nav-link">Inicio</a></li>
+                    <li><a href="#productos" class="header__nav-link">Productos</a></li>
+                    <li><a href="#beneficios" class="header__nav-link">Beneficios</a></li>
+                    <li><a href="#testimonios" class="header__nav-link">Testimonios</a></li>
+                    <li><a href="#contacto" class="header__nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--==================== Main ====================-->
+    <main id="content" role="main">
+
+        <section class="hero" id="inicio">
+            <div class="hero__content">
+                <h1 class="hero__title">Limpieza que cuida tu hogar y el planeta</h1>
+                <p class="hero__text">Productos 100% ecológicos, biodegradables y libres de químicos dañinos.</p>
+                <a href="#productos" class="hero__button">Descubre nuestros productos</a>
+            </div>
+            <div class="hero__image">
+                <img src="https://placehold.co/600x400/4CAF50/FFFFFF?text=EcoClean" alt="Productos EcoClean"
+                    loading="lazy">
+            </div>
+        </section>
+    <!--==================== Productos ====================-->
+        <section class="products" id="productos">
+            <h2 class="section__title">Nuestros Productos</h2>
+            <div class="products__grid">
+                <article class="product-card">
+                    <img src="https://placehold.co/300x200/8BC34A/FFFFFF?text=Limpiavidrio"
+                        alt="Limpiavidrios ecológico" loading="lazy">
+                    <h3>Limpiavidrios Natural</h3>
+                    <p>Elimina manchas sin dejar residuos químicos.</p>
+                </article>
+                <article class="product-card">
+                    <img src="https://placehold.co/300x200/8BC34A/FFFFFF?text=Detergente" alt="Detergente ecológico" loading="lazy">
+                    <h3>Detergente Eco</h3>
+                    <p>Biodegradable y seguro para toda la familia.</p>
+                </article>
+                 <article class="product-card">
+                    <img src="https://placehold.co/300x200/8BC34A/FFFFFF?text=Desinfectante" alt="Desinfectante natural" loading="lazy">
+                    <h3>Desinfectante Natural</h3>
+                    <p>Elimina bacterias con extractos vegetales.</p>
+                </article>
+            </div>
+        </section>
+
+    <!--==================== Beneficios ====================-->
+        <section class="benefits" id="beneficios">
+            <h2 class="section__title">¿Por qué elegir EcoClean?</h2>
+            <div class="benefits__grid">
+                <div class="benefit-card">
+                    <h3>100% Natural</h3>
+                    <p>Ingredientes de origen vegetal y mineral.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Biodegradable</h3>
+                    <p>Se descompone sin dañar el medio ambiente.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Eficacia Comprobada</h3>
+                    <p>Resultados iguales o mejores que los químicos.</p>
+                </div>
+            </div>
+        </section>
+
+    <!--==================== Testimonios ====================-->
+        <section class="testimonials" id="testimonios">
+            <h2 class="section__title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonials__slider" id="testimonialSlider">
+                <div class="testimonial">
+                    <p>"Desde que uso EcoClean, mi familia ha dejado de tener alergias."</p>
+                    <span>- María G.</span>
+                </div>
+                <div class="testimonial">
+                    <p>"La mejor decisión para mi hogar y el planeta."</p>
+                    <span>- Carlos M.</span>
+                </div>
+            </div>
+        </section>
+        
+    <!--==================== Contacto ====================-->
+        <section class="contact" id="contacto">
+            <h2 class="section__title">Contáctanos</h2>
+            <form action="" class="contact__form" id="contactForm">
+                <did class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" required>
+                </did>
+                   <did class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </did>
+                   <did class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" required></textarea>
+                </did>
+                <button type="submit" class="form__button">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!--==================== Footer ====================-->
+    <footer role="contentinfo">
+
+    </footer>
+
+    <!--==================== Scripts ====================-->
+    <script src="/assets/js/app.js" defer></script>
+
+</body>
+
+</html>
